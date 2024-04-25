@@ -13,4 +13,4 @@ class Message(db.Model, SerializerMixin):
     updated_at = db.Column(db.DateTime, onupdate=db.func.now())
 
     def __repr__(self):
-        return f'<Message by {self.username}: {self.body[:10]}...>'
+        return f'< by {self.username}: {self.body[:10]}...>'
